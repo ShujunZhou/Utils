@@ -1,4 +1,4 @@
-package cn.smart.test;
+﻿package cn.smart.test;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -20,7 +20,7 @@ public class MyThreadLocal<T> {
         Thread thread = Thread.currentThread();
         T value = threadTMap.get(thread);
         if (value == null && !threadTMap.containsKey(thread)) {
-            initValue();
+            value = initValue();
             threadTMap.put(thread, value);
         }
 
