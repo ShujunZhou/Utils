@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UnitConversion</string>
+    <string-array name="length">
+        <item>英寸</item>
+        <item>寸</item>
+        <item>英镑</item>
+        <item>英里</item>
+        <item>盎司</item>
+    </string-array>
+
+    <string-array name="lengthResult">
+        <item>厘米</item>
+        <item>公斤</item>
+        <item>公里</item>
+        <item>毫升</item>
+    </string-array>
+    <string name="prompt">请输入数据</string>
+    <string name="connect">Connect Server</string>
+</resources>
