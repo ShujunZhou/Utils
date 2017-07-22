@@ -1,9 +1,6 @@
-package cn.smart.test.java8.lambda;
-
-import cn.smart.test.LamadaTest;
+package test.java8.lambda;
 
 import java.util.Arrays;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by shu on 2017/7/20.

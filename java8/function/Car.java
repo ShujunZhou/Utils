@@ -1,4 +1,4 @@
-package cn.smart.test.java8.function;
+package test.java8.function;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package cn.smart.test.java8.stream;
+package test.java8.stream;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -11,7 +11,7 @@ public class Streams {
     private enum Status {
         OPEN,
         CLOSED
-    };
+    }
     private static final class Task {
         private final Status status;
         private final Integer points;
@@ -48,6 +48,5 @@ public class Streams {
                 .sum();
 
         System.out.println("TotalPointsOfTasks" + totalPointsOfTasks);
-
     }
 }

@@ -1,4 +1,4 @@
-package cn.smart.test.java8.lambda;
+package test.java8.lambda;
 
 import java.util.function.Supplier;
 

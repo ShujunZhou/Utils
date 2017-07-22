@@ -1,25 +1,26 @@
 package cn.smart.test.consumerAndProducer;
 
+import cn.smart.test.consumerAndProducer.awaitAndsignal.Storage;
+
 /**
- * Created by shu on 2017/7/14.
- * 消费者线程
+ * Created by shu on 2017/7/15.
+ * 消费者
  */
-public class Consumer implements Runnable {
-    //设置仓库
-    private MyQueue myQueue;
+public class Consumer implements Runnable{
+    //仓库
+    private StorageInter storage;
+    //每次消费个数
+    private int num;
 
-    //设置每次消费的个数
-    private int nums;
-
-    public Consumer(MyQueue myQueue, int nums) {
-        this.myQueue = myQueue;
-        this.nums = nums;
+    public Consumer(StorageInter storage, int num) {
+        this.storage = storage;
+        this.num = num;
     }
 
     @Override
     public void run() {
         while (true) {
-            myQueue.consume(nums);
+            storage.consume(num);
         }
     }
 }

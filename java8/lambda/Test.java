@@ -1,4 +1,4 @@
-package cn.smart.test.java8.lambda;
+package test.java8.lambda;
 
 import java.util.ArrayList;
 
@@ -11,5 +11,13 @@ public class Test {
         Defaulable defaulable = DefaulableFactory.create(DefaulableImpl :: new);
 
         ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(28);
+        list.add(30);
+        long nums = list.stream().filter(num -> num > 10).count();
+        list.stream().filter(num -> num > 10).forEach(
+                System.out::println
+        );
+        System.out.println(nums);
     }
 }
